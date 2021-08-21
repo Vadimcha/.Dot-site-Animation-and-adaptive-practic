@@ -1,0 +1,299 @@
+*
+    box-sizing: border-box
+    
+body
+    justify-content: center
+    align-items: center
+    margin: 0
+
+ul
+    padding: 0
+    list-style: none
+    margin: 0
+
+a
+    text-decoration: none
+    color: black
+
+.content
+    max-width: 918px
+    margin: 0 auto
+
+.btn
+    color: #fff
+    background-color: #FF5F61
+    padding: 7px 20px
+    border-radius: 25px
+    transition: 0.5s
+
+    &:hover
+        background-color: #E5393C
+        color: #CBCBCB
+
+
+.section1
+    background-image: url('Component 1.png')
+    background-size: cover
+    background-attachment: fixed
+    background-position: top center
+    margin-bottom: 100px
+    padding-bottom: 100px
+
+.section2
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(300px, 387px))
+    grid-row-gap: 115px
+    justify-content: center
+    align-items: center
+    justify-items: center
+
+.header
+    font-family: Work Sans
+    font-weight: 400
+    font-size: 18px
+
+    #first
+        padding-top: 38px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__nav
+        display: flex
+    
+    &__links
+        color: #fff
+        margin-right: 57px
+        transition: 0.5s
+    &__links:hover
+        color: #FF5F61
+
+    #lastchild
+        margin-right: 0
+
+    &__btn
+        font-size: 20px
+    
+.banner
+    color: #fff
+    font-family: Work Sans
+    font-size: 18px
+
+    #second
+        display: grid
+        grid-column-gap: 118px
+        grid-row-gap: 0px
+        grid-template-columns: repeat(auto-fill, minmax(301px, 387px))
+        justify-content: center
+        align-items: center
+    &__title
+        font-weight: 600
+        font-size: 48px
+        margin: 0
+        margin-top: 168px
+    
+    &__dscr
+        font-weight: 400
+        max-width: 460px
+        margin: 0
+        margin-top: 20px
+        margin-bottom: 64px
+
+    &__btn
+        font-weight: 600
+
+.forma
+    margin-top: -70px
+    max-width: 300px
+    border-radius: 13px
+    box-shadow: 0px -10px 0px #1A3055;
+    padding: 25px
+    position: relative
+
+    text-align: center
+    color: #fff
+    background-color: #FF5F61
+    font-family: Work Sans
+    &__title
+        margin: 0
+        font-weight: bold
+        font-size: 24px
+
+    &__dscr
+        font-weight: 300
+        font-size: 18px
+        margin: 0
+        margin-top: 27px
+        margin-bottom: 14px
+    
+    &__btn
+        cursor: pointer
+        width: 20px
+        height: 34px
+        border: none
+        background-color: #1A3055
+        background-image: url('Vector.png') 
+        background-repeat: no-repeat
+        background-size: 40%
+        background-position: center
+        border-radius: 0px 18px 18px 0px
+        position: absolute
+    
+    &__input
+        margin-left: -25px
+        position: relative
+        padding: 10px 62px 10px 20px
+        border: none
+        border-radius: 25px 0px 0px 25px
+        outline: none
+
+.feedback
+    font-family: Work Sans
+    font-size: 14px
+    font-weight: 600
+    margin-top: -100px
+
+    &__text
+        max-width: 100%
+        text-align: center
+        font-style: italic
+        margin-left: auto
+
+    &__author
+        max-width: 387px
+        color: #FA8D3D
+        text-align: center
+        margin-left: auto
+
+.card
+    font-family: Work Sans
+    font-size: 14px
+    margin-top: 100px
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(293px, 367px))
+    justify-content: center
+    align-items: center
+    grid-column-gap: 184px
+
+    &__title
+        margin: 0
+        margin-bottom: 20px
+        font-family: Tenali Ramakrishna
+        font-size: 36px
+        line-height: 100%
+
+    &__dscr
+        margin: 0
+        margin-bottom: 20px
+
+.pluses
+    margin-top: 43px
+    padding-bottom: 50px
+    padding-top: 0px
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(215px, 266px))
+    align-content: center
+    justify-content: center
+    justify-items: center
+    grid-column-gap: 60px
+    grid-row-gap: 0px
+
+.wrapper
+    background-color: #f9f9f9
+
+.plus
+    
+    &__title
+        margin-top: -75px
+        text-align: center
+
+        font-family: Work Sans
+        font-weight: 500
+        font-size: 20px
+
+    &__dscr
+        text-align: center
+
+        font-family: Work Sans
+        font-size: 18px
+        line-height: 21px
+        color: #7D7D7D
+
+.footer
+    font-family: Work Sans
+    font-weight: 500
+    font-size: 20px
+    text-align: center
+
+    color: #1A3055
+
+    margin: 30px 0
+
+    .name
+        color: #FF5F61
+
+    &__social
+        margin-right: 50px
+    a:last-child
+        margin-right: 0
+
+.burger
+    display: none
+    &:hover
+        .burger-line
+            background-color: #FF5F61
+
+        
+
+.burger-line
+    width: 30px
+    height: 5px
+    background-color: #fff
+
+.popup
+    display: grid
+    grid-template-rows: repeat(6, 1fr)
+    justify-content: center
+    justify-items: center
+    align-items: center
+
+    position: fixed
+    z-index: 1
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.8)
+    &__links
+        color: #fff
+
+    &__btn
+        color: #fff
+
+    opacity: 0
+    visibility: hidden
+
+.popup:target
+    opacity: 1
+    visibility: visible
+
+@media screen and (max-width: 992px)
+    
+    .content
+        padding: 0 10px
+        max-width: 100%
+
+@media screen and (max-width: 657px)
+    .header
+        &__nav
+            display: none
+        
+        &__btn
+            display: none
+
+    .burger
+        width: 30px
+        height: 27px
+        display: inline
+        display: grid
+        grid-template-rows: 5px 5px 5px
+        grid-row-gap: 6px
+
+    
